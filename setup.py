@@ -57,14 +57,14 @@ setup(
 
     # Update ./build-scripts/ubuntu-xxxx/build-3rd-parties.sh when this list gets updated.
     # - Excluding changes to indy-plenum.
-    install_requires=['indy-plenum==1.13.1.dev1677853403',
+    install_requires=['indy-plenum==1.13.1rc4',
                     # importlib-metadata needs to be pinned to 3.10.1 because from v4.0.0 the package
                     # name ends in python3-importlib-metadata_0.0.0_amd64.deb
                     # see also build-scripts/ubuntu-2004/build-3rd-parties.sh
                     # https://github.com/hyperledger/indy-plenum/blob/eac38674252b539216be2c40bb13e53c5b70dad2/build-scripts/ubuntu-2004/build-3rd-parties.sh#L104-L106
                       'importlib-metadata==3.10.1',
                       'timeout-decorator>=0.5.0',
-                      'distro==1.7.0'],
+                      'distro==1.8.0'],
     setup_requires=['pytest-runner'],
     extras_require={
         'tests': tests_require
